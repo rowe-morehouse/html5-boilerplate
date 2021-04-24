@@ -8,14 +8,80 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   This Style Sheet: Base styles: opinionated defaults
    ========================================================================== */
 
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
 html {
+  font-family: 'Inter var', 'Inter', sans-serif;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif;
+  }
+}
+
+/* Set up for old browsers, only regular + bold */
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: normal;
+  /* font-weight: 400; */
+  font-display: swap;
+  src: url("./dist/font/Inter-Regular.woff2?v=3.13") format("woff2"),
+       url("./dist/font/Inter-Regular.woff?v=3.13") format("woff"),
+       url('./dist/font/Inter-Regular.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: bold;
+  /* font-weight: 700; */
+  font-display: swap;
+  src: url("./dist/font/Inter-Bold.woff2?v=3.18") format("woff2"),
+       url("./dist/font/Inter-Bold.woff?v=3.18") format("woff"),
+       url('./dist/font/Inter-Regular.eot?#iefix') format('embedded-opentype');
+}
+
+/* Set up Variable font. Usage:
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+      @supports (font-variation-settings: normal) {
+      html { font-family: 'Inter var', sans-serif;
+      }
+  } */
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("./dist/font/Inter-roman.var.woff2?v=3.18") format("woff2");
+
+/*   ./dist/font/Inter-roman.var.woff2 */
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("./dist/font/Inter-italic.var.woff2?v=3.18") format("woff2");
+}
+
+/* ---------------------------------------------------------
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -83,9 +149,6 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 /* ==========================================================================
    Helper classes
