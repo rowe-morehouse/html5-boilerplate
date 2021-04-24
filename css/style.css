@@ -36,9 +36,9 @@ html {
   font-weight: normal;
   /* font-weight: 400; */
   font-display: swap;
-  src: url("./dist/font/Inter-Regular.woff2?v=3.13") format("woff2"),
-       url("./dist/font/Inter-Regular.woff?v=3.13") format("woff"),
-       url('./dist/font/Inter-Regular.eot?#iefix') format('embedded-opentype');
+  src: url("./font/Inter-Regular.woff2?v=3.13") format("woff2"),
+       url("./font/Inter-Regular.woff?v=3.13") format("woff"),
+       url('./font/Inter-Regular.eot?#iefix') format('embedded-opentype');
 }
 
 @font-face {
@@ -47,9 +47,9 @@ html {
   font-weight: bold;
   /* font-weight: 700; */
   font-display: swap;
-  src: url("./dist/font/Inter-Bold.woff2?v=3.18") format("woff2"),
-       url("./dist/font/Inter-Bold.woff?v=3.18") format("woff"),
-       url('./dist/font/Inter-Regular.eot?#iefix') format('embedded-opentype');
+  src: url("./font/Inter-Bold.woff2?v=3.18") format("woff2"),
+       url("./font/Inter-Bold.woff?v=3.18") format("woff"),
+       url('./font/Inter-Regular.eot?#iefix') format('embedded-opentype');
 }
 
 /* Set up Variable font. Usage:
@@ -66,9 +66,9 @@ html {
   font-display: swap;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url("./dist/font/Inter-roman.var.woff2?v=3.18") format("woff2");
+  src: url("./font/Inter-roman.var.woff2?v=3.18") format("woff2");
 
-/*   ./dist/font/Inter-roman.var.woff2 */
+/*   ./font/Inter-roman.var.woff2 */
 }
 @font-face {
   font-family: 'Inter var';
@@ -76,7 +76,7 @@ html {
   font-display: swap;
   font-style: italic;
   font-named-instance: 'Italic';
-  src: url("./dist/font/Inter-italic.var.woff2?v=3.18") format("woff2");
+  src: url("./font/Inter-italic.var.woff2?v=3.18") format("woff2");
 }
 
 /* ---------------------------------------------------------
